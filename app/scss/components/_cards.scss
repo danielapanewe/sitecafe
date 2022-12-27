@@ -1,0 +1,70 @@
+@use '../util' as *;
+
+.cards {
+    &__item {
+        display: grid;
+    }
+    &__img {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        &__icon {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            position: absolute;
+            top: 13%;
+            right: 8%;
+
+            ion-icon,
+            svg {
+                background-color: #edeae3;
+                padding: 0.2rem;
+            }
+            svg {
+                width: 82%;
+                height: auto;
+                padding: 0.4rem;
+            }
+
+            &--active {
+                background-color: var(--brown) !important;
+            }
+        }
+    }
+
+    &__text {
+        padding: 0.7rem;
+
+        p {
+            font-weight: 700;
+            font-size: rem(20);
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--icons {
+                display: flex;
+                gap: 0.2rem;
+                ion-icon {
+                    font-size: 0.6rem;
+                    color: var(--brown);
+                }
+            }
+
+            p {
+                font-weight: 700;
+                font-size: rem(20);
+            }
+        }
+        &__body {
+            font-weight: 400;
+            font-size: 1rem;
+            color: #828282;
+        }
+    }
+}

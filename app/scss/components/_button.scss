@@ -1,0 +1,28 @@
+@use '../util' as *;
+
+.btn {
+    padding: rem(18) rem(56);
+    border: 1px solid var(--brown);
+    color: var(--brown);
+    display: inline-block;
+
+    &:hover {
+        background-color: cadetblue;
+        transform: scale(5px);
+    }
+}
+.btn--brown {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.btnarrow {
+    padding: rem(16) rem(48);
+    color: var(--white);
+    border: 1px solid var(--brown);
+    display: inline-block;
+
+    &--brown {
+        background-color: var(--brown);
+    }
+}

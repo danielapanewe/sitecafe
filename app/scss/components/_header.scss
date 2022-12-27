@@ -1,0 +1,51 @@
+@use '../util' as *;
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    //background-color: black;
+
+    &__container{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 0.7rem;
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: rem(32);
+        color: var(--white);
+
+        span {
+            color: var(--brown);
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 1rem;
+        color: var(--white);
+        margin-right: 1rem;
+
+       
+    }
+    .active{
+        color: var(--brown);
+    }
+    &__icons{
+        img{
+            margin-right: 0.5rem;
+        }
+    }
+}

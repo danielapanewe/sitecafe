@@ -1,0 +1,77 @@
+@use '../util' as *;
+
+.about {
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__img {
+        position: relative;
+
+        &--1 {
+            width: 80%;
+        }
+        &--2 {
+            position: absolute;
+            bottom: -10%;
+            left: -8.5%;
+            width: 68%;
+            border: 0.01rem solid #bc9b6c31;
+        }
+        &--3 {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            z-index: -1;
+            width: 40%;
+        }
+        &--4 {
+            width: 89%;
+        }
+        &__text {
+            position: absolute;
+            bottom: 2%;
+            padding: 1rem;
+            width: 80%;
+            left: 44%;
+            transform: translate(-50%, -50%);
+            background-color: var(--white);
+            border-radius: 6px;
+            &--name {
+                font-weight: 700;
+            }
+        }
+    }
+    &__text {
+        align-self: flex-end;
+        padding-bottom: 3rem;
+
+      
+    }
+    &__feature {
+        &__item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+
+            .checkicon {
+                background-color: #e2eae3;
+                padding: 0.2rem;
+
+                &--active {
+                    background-color: var(--titlecolor);
+                    color: var(--white);
+                }
+            }
+
+            &__header {
+                font-weight: 700;
+                font-size: rem(18);
+            }
+
+            img {
+                width: 15%;
+            }
+        }
+    }
+}

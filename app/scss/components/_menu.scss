@@ -1,0 +1,60 @@
+@use '../util' as *;
+
+.menu {
+    display: grid;
+    gap: 2rem;
+
+    &__body {
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        gap: 1.1rem;
+    }
+
+    &__aside {
+        background-color: #edeae3;
+        padding: 1.3rem;
+
+        &__container {
+            display: grid;
+            gap: 1rem;
+        }
+        &__item {
+            background-color: var(--white);
+            padding: 0.8rem 0.6rem;
+            display: flex;
+            gap: 1rem;
+
+            svg {
+                width: 20%;
+            }
+
+            &--active {
+                background-color: var(--brown);
+            }
+
+            &-text {
+                font-weight: 700;
+                font-size: rem(20);
+                align-self: center;
+            }
+        }
+    }
+}
+
+.dots {
+    justify-self: center;
+    display: flex;
+    gap: 0.6rem;
+
+    span {
+        padding: 0.2rem;
+        border: 0 solid;
+        background-color: rgba(188, 154, 108, 0.4);
+        border-radius: 50%;
+    }
+
+    &--active {
+        background-color: var(--brown) !important;
+        transform: scale(1.8);
+    }
+}

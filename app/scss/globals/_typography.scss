@@ -1,0 +1,87 @@
+@use '../util' as * ;
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.firsttitle {
+    font-weight: 700;
+    font-size: rem(60);
+    line-height: rem(68);
+    color: var(--brown);
+}
+.secondtitle {
+    font-weight: 700;
+    font-size: rem(48);
+    line-height: rem(56);
+    color: var(--titlecolor);
+}
+.thirdtitle {
+    font-weight: 400;
+    font-size: rem(18);
+    line-height: rem(26);
+    color: var(--titlecolor);
+}
+.paragraph {
+    color: var(--textcolor);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: rem(24);
+
+    &--white{
+        color: var(--white);
+    }
+}
+.mb-2{
+    margin-bottom: 1.5rem;
+}
+.mb-1{
+    margin-bottom: 1rem;
+}
+.mb-05{
+    margin-bottom: 0.5rem;
+}
+.mr-1{
+    margin-right: 1rem;
+}
+.mt-5{
+    margin-top: 5rem !important;
+}
+.mb-4{
+    margin-bottom: 4rem;
+}
+.right--align{
+    text-align: right;
+}
+.center--align{
+    text-align: center;
+}
+
+.alignselfcenter{
+    align-self: center;
+}
+.titleimg{
+    position: relative;
+    margin-bottom: 0.5rem;
+    img {
+        position: absolute;
+        width: 8.5%;
+        top: -32%;
+        left: -1.5%;
+    }
+}
+.color{
+    &--white{
+        color: var(--white);
+    }
+}
